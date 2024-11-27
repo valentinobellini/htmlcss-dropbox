@@ -9,6 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./CSS/style.css">
     <title>Dropbox Clone</title>
 </head>
@@ -69,7 +72,9 @@
                 <div id="jumbo-inner-container">
                     <div id="jumbo-text">
                         <p id="jumbo-description">
-                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente e integrato per ottimizzare il flusso di lavoro esistente.
+                            Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso
+                            posto. Dropbox Business è più di uno spazio di archiviazione sicuro: è un modo intelligente
+                            e integrato per ottimizzare il flusso di lavoro esistente.
                         </p>
                         <span class="button">
                             Inizia la tua prova gratuita
@@ -79,7 +84,7 @@
                         </span>
                     </div>
 
-                    <div>
+                    <div id="jumbo-img-container">
                         <img id="jumbo-img" src="./img/jumbo.png" alt="">
                     </div>
                 </div>
@@ -88,34 +93,44 @@
 
         <!-- section 1 -->
         <section id="section-1">
-            <div class="section-1-outer-container">
-                <h2>
-
+            <div id="section-1-outer-container">
+                <h2 id="section-1-title">
+                    Trova il piano business che fa per te
                 </h2>
-                <div class="checkbox">
-                    <span></span>
-                    <span></span>
+                <div id="check">
+                    <span><span class="checkbox checkbox-blue">&#9675;</span>Fatturazione mensile</span>
+                    <span><span class="checkbox">&#9675;</span>Fatturazione annuale</span>
                 </div>
-                <div class="column-container">
-                    <div class="label">
 
+                <div class="column-container">
+
+                    <!-- container label column top -->
+                    <div class="label">
+                        <i class="fa-solid fa-user"></i>
+                        <span>Singolo</span>
                     </div>
+
+                    <!-- container column -->
                     <div class="column">
-                        <h3></h3>
-                        <span></span>
-                        <span></span>
+
+                        <h3 class="column-title">Professional</h3>
+                        <span class="price">€ 12.00</span>
+                        <span class="period">/mese</span>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li><i class="fa-solid fa-user column-icons"></i>1 utente</li>
+                            <li><i class="fa-solid fa-folder column-icons"></i>5TB di spazio di archiviazione sicuro
+                            </li>
+                            <li class="last-icon"><i class="fa-solid fa-share-nodes column-icons"></i>Funzioni di produttività premium e
+                                condivisione file semplice e sicura</li>
                         </ul>
-                        <span class="button"></span>
-                        <span></span>
+
+                        <a class="button">Prova gratis per 30 giorni</a>
+                        <span>oppure <a href="">acquista ora</a> </span>
                         <div class="break"></div>
-                        <span></span>
+                        <span class="column-list-title">Punti salienti del piano</span>
                         <ul>
-                            <li></li>
-                            <li></li>
+                            <li><i class="fa-solid fa-check list-icon"></i>Invia file fino a 100 GB con  Dropbox Transfert</li>
+                            <li><i class="fa-solid fa-check list-icon"></i>Cartelle offline su dispositivi mobili</li>
                         </ul>
                     </div>
 

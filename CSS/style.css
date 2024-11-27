@@ -4,14 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: opensans , sans-serif;
+    font-family: opensans, sans-serif;
     text-decoration: none;
-    
+    list-style: none;
+
 }
 
 .button {
     background-color: #0061fe;
     padding: 10px 15px;
+    color: white;
+    text-align: center;
 }
 
 
@@ -28,38 +31,38 @@ header {
     z-index: 1;
 }
 
-    #header-left ul {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+#header-left ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
-        height: 100%;
-        list-style: none;
-    }
+    height: 100%;
+    list-style: none;
+}
 
-        .header-elements {
-            margin-right: 20px;
-        }
+.header-elements {
+    margin-right: 20px;
+}
 
-        .header-elements:hover .header-elements{
-            border-bottom: 2px solid black;
-        }
+.header-elements:hover .header-elements {
+    border-bottom: 2px solid black;
+}
 
-        #logo {
-            background-image: url(../img/logo-small.png);
-            height: 60px;
-        }
+#logo {
+    background-image: url(../img/logo-small.png);
+    height: 60px;
+}
 
-    #header-right ul {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
+#header-right ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
-        height: 100%;
-        list-style: none;
-    }
+    height: 100%;
+    list-style: none;
+}
 
 
 /* jumbotrone */
@@ -71,36 +74,174 @@ header {
     background-color: #b4d0e6;
 }
 
-    #jumbo-outer-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+#jumbo-outer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
-        padding-top: 100px;
-        width: 60%;
-    }
+    padding-top: 100px;
+    width: 70%;
+}
 
-    #jumbo-outer-container h1 {
-        font-size: 75px;
-        font-weight: 800;
-        margin-bottom: 50px;
-    }
+#jumbo-outer-container h1 {
+    font-size: 75px;
+    font-weight: 800;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 
-    #jumbo-img {
-        max-width: 100%;
-    }
+#jumbo-inner-container {
+    display: flex;
+}
 
-    #jumbo-inner-container {
-        display: flex;
-    }
+#jumbo-img-container {
+    width: 100%;
+}
 
-    #jumbo-text {
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        line-height: 150%;
-    }
+#jumbo-img {
+    max-width: 100%;
+}
 
-    #jumbo-text p, span {
-        margin-bottom: 20px;
-    }
+
+#jumbo-text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    line-height: 150%;
+}
+
+#jumbo-text p {
+    margin-bottom: 20px;
+}
+
+#jumbo-text span {
+    margin-bottom: 20px;
+}
+
+
+
+/* main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#section-1 {
+    width: 50%;
+}
+
+
+#section-1-outer-container {
+    padding-top: 100px;
+    width: 100%;
+}
+
+#section-1-title {
+    font-size: 40px;
+    font-weight: 790;
+    margin-bottom: 50px;
+}
+
+#check {
+    margin-bottom: 100px;
+}
+
+.checkbox {
+    font-size: 30px;
+    text-align: center;
+    padding-right: 5px;
+}
+
+.checkbox-blue {
+    color: #0061fe;
+    font-size: 30px;
+}
+
+
+.label {
+    border: 1px solid gray;
+    padding: 10px;
+    text-align: center;
+    width: 30%;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+
+    width: 30%;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    ;
+    border-right: 1px solid gray;
+    ;
+}
+
+.column h3, 
+.column span,
+.column ul{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.column-title {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+.price{
+    font-weight: 700;
+}
+
+.column li {
+    padding-bottom: 20px;
+}
+
+.column h3 {
+    padding-top: 20px;
+}
+
+.period {
+    margin-bottom: 40px;
+}
+
+.column-icons {
+    padding-right: 10px;
+}
+
+.last-icon {
+    margin-bottom: 20px;
+}
+
+
+.column .button {
+    margin: 0px 20px 30px 20px;
+}
+
+.break {
+    margin-left: 20px;
+    width: 30%;
+    border-bottom: 1px solid gray;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.column-list-title {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.column-list-title ul, li {
+    font-size: 14px;
+}
+
+.list-icon {
+    color: #0061fe;
+    font-size: 20px;
+    font-weight: 800;
+    padding-right: 5px;
+}
