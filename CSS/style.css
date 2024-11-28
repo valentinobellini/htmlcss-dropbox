@@ -10,9 +10,9 @@
 
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-}
+} */
 
 .button {
     background-color: #0061fe;
@@ -50,6 +50,8 @@ header {
     z-index: 1;
 }
 
+
+
 .header-block ul {
     display: flex;
     justify-content: center;
@@ -61,6 +63,10 @@ header {
 }
 
 .header-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     margin-right: 30px;
     height: 100%;
 }
@@ -68,6 +74,7 @@ header {
 .header-elements a {
     color: black;
     font-size: 15px;
+    display: block;
 }
 
 .header-elements:hover {
@@ -85,9 +92,6 @@ header {
     height: 100%;
 }
 
-/* .link-container:hover {
-    border-bottom: 2px solid black;
-} */
 
 .header-elements-last {
     color: white;
