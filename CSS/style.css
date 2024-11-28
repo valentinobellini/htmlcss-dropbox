@@ -10,6 +10,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .button {
     background-color: #0061fe;
     padding: 10px 15px;
@@ -17,10 +21,19 @@
     text-align: center;
 }
 
+.button:hover {
+    background-color: #5796fc;
+    border: none;
+}
+
 .button-white {
     padding: 10px 15px;
     text-align: center;
     border: 1px solid gray;
+}
+
+#target-section {
+    scroll-margin-top: 120px; 
 }
 
 
@@ -37,7 +50,7 @@ header {
     z-index: 1;
 }
 
-#header-left ul {
+.header-block ul {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -48,26 +61,41 @@ header {
 }
 
 .header-elements {
-    margin-right: 20px;
+    margin-right: 30px;
+    height: 100%;
 }
 
-.header-elements:hover .header-elements {
+.header-elements a {
+    color: black;
+    font-size: 15px;
+}
+
+.header-elements:hover {
     border-bottom: 2px solid black;
 }
 
 #logo {
-    background-image: url(../img/logo-small.png);
-    height: 60px;
+    margin-left: 20px;
 }
 
-#header-right ul {
+.link-container {
     display: flex;
-    justify-content: center;
-    align-content: center;
     align-items: center;
-
+    justify-content: center;
     height: 100%;
-    list-style: none;
+}
+
+/* .link-container:hover {
+    border-bottom: 2px solid black;
+} */
+
+.header-elements-last {
+    color: white;
+    margin-right: 20px;
+}
+
+.header-elements-last a {
+    color: white;
 }
 
 
@@ -78,15 +106,12 @@ header {
     align-items: center;
 
     background-color: #b4d0e6;
+    height: 840px;
 }
 
 #jumbo-outer-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
     padding-top: 100px;
-    width: 70%;
+    width: 65%;
 }
 
 #jumbo-outer-container h1 {
@@ -101,7 +126,7 @@ header {
 }
 
 #jumbo-img-container {
-    width: 100%;
+    width: 70%;
 }
 
 #jumbo-img {
@@ -110,7 +135,7 @@ header {
 
 
 #jumbo-text {
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     line-height: 150%;
@@ -122,6 +147,16 @@ header {
 
 #jumbo-text span {
     margin-bottom: 20px;
+}
+
+.jumbo-button {
+    width: 60%;
+}
+
+#arrow {
+    margin-top: 100px;
+    font-size: 60px;
+    color: black;
 }
 
 
@@ -144,7 +179,7 @@ main {
 
 
 #section-1-outer-container {
-    padding-top: 100px;
+    padding-top: 180px;
     width: 100%;
 }
 
@@ -161,13 +196,16 @@ main {
 .checkbox {
     font-size: 30px;
     text-align: center;
-    padding-right: 5px;
+    margin-left: 70px;
+    accent-color: blue;
 }
 
-.checkbox-blue {
-    color: #0061fe;
-    font-size: 30px;
+input[type="checkbox"] {
+    margin-right: 10px; /* Spazio tra la checkbox e il testo */
 }
+
+
+
 
 
 
@@ -179,14 +217,23 @@ main {
 }
 
 .column-container {
+    display: flex;
+    flex-direction: column;
     width: 30%;
+
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
 }
 
 
 
 /* column content */
 .label {
-    border: 1px solid gray;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
     padding: 10px;
     text-align: center;
 }
@@ -195,9 +242,7 @@ main {
     display: flex;
     flex-direction: column;
 
-    border-bottom: 1px solid gray;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
+
 }
 
 .column h3, 
@@ -350,8 +395,6 @@ main {
 
 /* section 3 */
 #section-3 {
-    display: flex;
-    justify-content: center;
     margin-top: 150px;
     margin-bottom: 200px;
 }
